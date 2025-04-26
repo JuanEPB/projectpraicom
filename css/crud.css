@@ -1,0 +1,102 @@
+.imgholder {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.btn btn-primary{
+    background-color: bisque;
+}
+
+.imgholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inputField {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.inputField > div {
+    margin: 20px;
+}
+
+.inputField > div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputField > div input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inputField > div input[type="file"] {
+    padding: 0;
+    border: none;
+}
+
+.upload {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload i {
+    font-size: 24px;
+    color: #666;
+}
+
+.upload input[type="file"] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .imgholder {
+        width: 150px;
+        height: 150px;
+    }
+
+    .inputField {
+        flex-direction: column;
+    }
+
+    .inputField > div {
+        margin: 10px;
+    }
+
+    .inputField > div label {
+        font-size: 16px;
+    }
+
+    .inputField > div input {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgholder {
+        width: 100px;
+        height: 100px;
+    }
+
+    .inputField > div label {
+        font-size: 14px;
+    }
+
+    .inputField > div input {
+        padding: 3px;
+    }
+}

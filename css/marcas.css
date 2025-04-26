@@ -1,0 +1,22 @@
+
+.container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los divs se acomoden en líneas si no caben */
+        justify-content: space-between;
+        flex-direction: row;
+  }
+  
+  .accordion-item {
+    display: inline-flexbox; /* Alinea horizontalmente */
+    width: 100; /* Ancho inicial de los divs */
+    height: 100;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: width 0.3s ease; /* Transición para el efecto hover */
+  }
+  
+  .accordion-item:hover {
+    width: 100%; /* Se expanden al 100% al pasar el mouse */
+  }
+*/

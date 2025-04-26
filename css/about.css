@@ -1,0 +1,41 @@
+
+  .info{
+    display: grid;
+    padding: 50px;
+    margin: 100px;
+    align-items: stretch;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    box-sizing: border-box;
+}
+.title{
+  padding: 20px;
+}
+.certificaciones{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+}
+.imagen{
+  height: 150px;
+  object-fit: cover;
+  margin: 100px;
+}
+
+
+@media(max-width:768px){
+  .info{
+      grid-template-columns: 1fr;
+      width: 100%;
+      align-items: center;
+      margin: 0 auto;
+      justify-items: center;  
+  }
+}

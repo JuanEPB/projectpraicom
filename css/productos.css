@@ -1,0 +1,101 @@
+.containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    width: 18rem;
+    height: 1rem;;
+    flex-grow: 1;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Hace que la imagen cubra toda la tarjeta sin distorsionarse */
+    object-position: center;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.select {
+    border-radius: 10px;
+}
+
+.titulog {
+    margin-left: 220px;
+    text-align: center;
+}
+
+.card-body .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-body .text-muted {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card-body .text-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #337ab7;
+    margin-bottom: 20px;
+}
+
+.card-body .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: #337ab7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-body .btn:hover {
+    background-color: #23527c;
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 210px;       
+}
+
+select {
+    margin-right: 100px;
+}
+
+@media (max-width: 932px) {
+    .select-container {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 100px;
+    }
+    .containerpro {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
