@@ -4,46 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Marcas Disponibles</title>
         <link rel="icon" href="./img/imagotipo.png">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/productos.css">
-    <link rel="stylesheet" href="./css/marcas.css">
+    <!-- <link rel="stylesheet" href="./css/marcas.css"> -->
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    </head>
     <body>
     <header>
-    <div class="logo" >
-        <div class="imagelogo">
-        <img src="./img/logo.png" width="350" height="" alt="Logo de la empresa">
-        </div>
-        <div class="navegacion w-100 justify-content-end">
-            <nav class="navbar navbar-light bg-light w-100">
-            <nav class="navbar navbar-expand-lg justify-content-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-            <a class="nav-link" href="./index.php">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./landinpage.php">Marcas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">Conocenos</a>
-          </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./index.php#Contactanos">Contactanos</a>
-                </li>
-                </ul>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo">
+                    <picture>
+                        <source srcset="./img/logo.png" type="image/webp" href="./img/logo.png">
+                        <img src="./img/logo.png" width="350px" alt="Logo de PRAICOM, empresa de aire comprimido" href="./index.php" loading="lazy" class="logo-img">
+                    </picture>                
+                </div>
+                <!-- Navegación -->
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.php" loading="lazy">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./landinpage.php" loading="lazy">Marcas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html" loading="lazy">Conocenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.php#Contactanos" loading="lazy">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            </nav>
-            </nav>
         </div>
-    </div>
     </header>
     <main>
     <section>
@@ -51,13 +53,12 @@
     <section>
     <h1 class="productos">Nuestras marcas principales</h1>
     <div class="container">
-        <div class="row">   
             <div class="accordion accordion-flush" id="accordionFlushExample"
            >
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        AIRPIPE
+                    <img class="imgAccordeon" src="./img/AirPipe-Logo-2-800-600x450.png" alt="Logo de Airpipe"  class="logo-airpipe">   
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -79,7 +80,8 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        BEKO
+                    <img class="imgAccordeon" src="./img/beko.jpg" alt="Logo de Beko"  class="logo-beko">
+
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -101,14 +103,14 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        SMC
+                        <img class="imgAccordeon" src="./img/smc.png" alt="Logo de SMC"  class="logo-smc">
                     </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <div class="col-md-4">
                                 <div class="card h-100" >
-                                    <img src="./img/catalogosmc.jpg" class="card-img-top" alt="...">
+                                    <img src="./img/catalogosmc.jpg" class="card-img-top" alt="..." >
                                     <div class="card-body">
                                         <h5 class="card-title">Somos distribuidores SMC</h5>
                                         <p class="card-text">
@@ -123,7 +125,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        FORTRIC
+                        <img  class="imgAccordeon" src="./img/FOTRIC-logo-512x212-1 (1).png" alt="Logo de Fortric" class="logo-fortric">
                     </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -143,10 +145,9 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
         </section>
-            
+
     <!-- Modal para mostrar el PDF -->
     <div id="pdfModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">

@@ -9,24 +9,26 @@
   }
 
   .card {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(118, 178, 247, 0.1);
     flex: 1;
     box-sizing: border-box;
 }
 .title{
   padding: 20px;
 }
-.certificaciones{
+.certificaciones {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: space-around;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+  gap: 20px; /* Espaciado entre las imágenes */
+  padding: 20px; /* Espaciado interno */
 }
-.imagen{
+
+.imagen {
   height: 150px;
-  object-fit: cover;
-  margin: 100px;
+  object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+  margin: 10px; /* Espaciado externo */
 }
 
 
